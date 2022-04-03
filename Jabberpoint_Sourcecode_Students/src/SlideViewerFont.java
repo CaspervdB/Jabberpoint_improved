@@ -1,10 +1,4 @@
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import javax.swing.JComponent;
-import javax.swing.JFrame;
+import java.awt.*;
 
 
 /**
@@ -14,26 +8,12 @@ import javax.swing.JFrame;
  * @version 1.6 2014/05/16 Sylvia Stuurman
  */
 
-public class SlideViewerComponent extends JComponent
+public class SlideViewerFont
 {
 
-    private static final String FONTNAME = "Dialog";
-    private static final int FONTSTYLE = Font.BOLD;
-    private static final int FONTHEIGHT = 10;
+    public static final String FONTNAME = "Dialog";
+    public static final int FONTSTYLE = Font.BOLD;
+    public static final int FONTHEIGHT = 10;
     private Font labelFont = null; //The font for labels
-
-
-    public void update(Presentation presentation, Slide data)
-    {
-        if (data == null)
-        {
-            repaint();
-            return;
-        }
-        this.presentation = presentation;
-        this.slide = data;
-        repaint();
-        frame.setTitle(presentation.getTitle());
-    }
 
 }

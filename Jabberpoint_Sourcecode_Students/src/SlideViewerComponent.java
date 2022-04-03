@@ -1,10 +1,5 @@
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import javax.swing.JComponent;
-import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.*;
 
 
 /**
@@ -21,13 +16,14 @@ public class SlideViewerComponent extends JComponent
 
     private Presentation presentation = null; //The presentation
     private JFrame frame = null;
+    private Font labelFont = null;
 
 
     public SlideViewerComponent(Presentation pres, JFrame frame)
     {
-        setBackground(BGCOLOR);
+        setBackground(SlideViewerColor.BACKGROUND_COLOR);
         presentation = pres;
-        labelFont = new Font(FONTNAME, FONTSTYLE, FONTHEIGHT);
+        labelFont = new Font(SlideViewerFont.FONTNAME, SlideViewerFont.FONTSTYLE, SlideViewerFont.FONTHEIGHT);
         this.frame = frame;
     }
 
@@ -52,17 +48,17 @@ public class SlideViewerComponent extends JComponent
     //Draw the slide
     public void paintComponent(Graphics g)
     {
-        g.setColor(BGCOLOR);
+        g.setColor(SlideViewerColor.BACKGROUND_COLOR);
         g.fillRect(0, 0, getSize().width, getSize().height);
         if (presentation.getSlideNumber() < 0 || slide == null)
         {
             return;
         }
         g.setFont(labelFont);
-        g.setColor(COLOR);
+        g.setColor(SlideViewerColor.COLOR);
         g.drawString("Slide " + (1 + presentation.getSlideNumber()) + " of " +
-                presentation.getSize(), XPOS, YPOS);
-        Rectangle area = new Rectangle(0, YPOS, getWidth(), (getHeight() - YPOS));
+                presentation.getSize(), SlideViewerPosition.X_AXIS_POSITION, SlideViewerPosition.Y_AXIS_POSITION);
+        Rectangle area = new Rectangle(0, SlideViewerPosition.Y_AXIS_POSITION, getWidth(), (getHeight() - SlideViewerPosition.Y_AXIS_POSITION));
         slide.draw(g, area, this);
     }
 }

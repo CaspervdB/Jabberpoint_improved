@@ -1,5 +1,4 @@
-import javax.swing.JOptionPane;
-
+import javax.swing.*;
 import java.io.IOException;
 
 /**
@@ -32,7 +31,7 @@ public class JabberPoint
         {
             if (argv.length == 0)
             { //a demo presentation
-                Accessor.getDemoAccessor().loadFile(presentation, "");
+                XMLAccessor.getDemoAccessor(presentation, "Demo");
             } else
             {
                 new XMLAccessor().loadFile(presentation, argv[0]);
