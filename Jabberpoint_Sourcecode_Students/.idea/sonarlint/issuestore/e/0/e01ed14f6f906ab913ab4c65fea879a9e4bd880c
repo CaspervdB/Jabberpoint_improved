@@ -1,0 +1,17 @@
+
+‚
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(§ğÅË8áè„ÿ/
+‡
+java:S11497"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(Ş†Ôóıÿÿÿÿ8âè„ÿ/
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÖßÓÑøÿÿÿÿ8ãè„ÿ/
+a
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(•ëö%8äè„ÿ/
+D
+java:S19053"'Remove this unnecessary cast to "Item".(ä­”8˜æÀ‰ÿ/
+I
+java:S1905N"'Remove this unnecessary cast to "Item".(å•í›ùÿÿÿÿ8Î¡Á‰ÿ/
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(†°°ğûÿÿÿÿ8ñè„ÿ/
+7
+java:S1220""Move this file to a named package.8óè„ÿ/

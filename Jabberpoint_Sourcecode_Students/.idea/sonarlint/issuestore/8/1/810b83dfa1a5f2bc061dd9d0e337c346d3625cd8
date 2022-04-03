@@ -1,0 +1,15 @@
+
+\
+java:S1118":Add a private constructor to hide the implicit public one.(Ê«ãäúÿÿÿÿ8›—“„ÿ/
+J
+java:S1128"(Remove this unused import 'javax.swing'.(Ìí¿Üüÿÿÿÿ8œ—“„ÿ/
+B
+java:S1128"%Remove this unused import 'java.awt'.(ï´µ©8œ—“„ÿ/
+T
+java:S1128"7Remove this unused import 'java.awt.event.ActionEvent'.(Úù“‘8—“„ÿ/
+W
+java:S1128":Remove this unused import 'java.awt.event.ActionListener'.(Ìä¹8—“„ÿ/
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8—“„ÿ/
+0
+java:S1220""Move this file to a named package.

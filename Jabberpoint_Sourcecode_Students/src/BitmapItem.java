@@ -1,11 +1,8 @@
-import java.awt.Rectangle;
-import java.awt.Graphics;
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
 import java.io.File;
-
-import javax.imageio.ImageIO;
-
 import java.io.IOException;
 
 
@@ -17,18 +14,19 @@ import java.io.IOException;
  * @version 1.6 2014/05/16 Sylvia Stuurman
  */
 
-public class BitmapItem extends SlideItem
+public class BitmapItem implements Item
 {
     protected static final String FILE = "File ";
     protected static final String NOT_FOUND = " not found";
     private BufferedImage bufferedImage;
     private String imageName;
+    private int level;
 
 
     //level indicates the item-level; name indicates the name of the file with the image
     public BitmapItem(int level, String name)
     {
-        super(level);
+        this.level = level;
         imageName = name;
         try
         {
@@ -38,13 +36,10 @@ public class BitmapItem extends SlideItem
             System.err.println(FILE + imageName + NOT_FOUND);
         }
     }
-
-    //An empty bitmap item
-    public BitmapItem()
+    public int getLevel()
     {
-        this(0, null);
+        return level;
     }
-
     //Returns the filename of the image
     public String getName()
     {
@@ -52,6 +47,7 @@ public class BitmapItem extends SlideItem
     }
 
     //Returns the bounding box of the image
+
     public Rectangle getBoundingBox(Graphics g, ImageObserver observer, float scale, Style myStyle)
     {
         return new Rectangle((int) (myStyle.indent * scale), 0,

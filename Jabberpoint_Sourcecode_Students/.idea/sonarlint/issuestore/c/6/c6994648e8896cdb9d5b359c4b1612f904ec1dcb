@@ -1,0 +1,41 @@
+
+N
+java:S2387"3"parent" is the name of a field in "MenuComponent".(ûŒµàûÿÿÿÿ
+K
+java:S1948".Make "presentation" transient or serializable.(ß ñ…8û’Þ‰ÿ/
+D
+java:S1905k")Remove this unnecessary cast to "Object".(œëçìûÿÿÿÿ
+D
+java:S1121".Extract the assignment out of this expression.(—óÏ•
+I
+java:S11212".Extract the assignment out of this expression.(ïÜÞþÿÿÿÿ
+D
+java:S1121;".Extract the assignment out of this expression.(¬Ó¹”
+C
+java:S1121L".Extract the assignment out of this expression.(ä¹m
+D
+java:S1121V".Extract the assignment out of this expression.(‹¡Ó·
+D
+java:S1121^".Extract the assignment out of this expression.(Œ×­œ
+I
+java:S1121f".Extract the assignment out of this expression.(ˆïÄ›øÿÿÿÿ
+I
+java:S1121r".Extract the assignment out of this expression.(®•‘Žýÿÿÿÿ
+>
+java:S1604 "(Make this anonymous inner class a lambda(í»õ¿
+>
+java:S16043"(Make this anonymous inner class a lambda(í»õ¿
+>
+java:S1604<"(Make this anonymous inner class a lambda(í»õ¿
+>
+java:S1604M"(Make this anonymous inner class a lambda(í»õ¿
+>
+java:S1604W"(Make this anonymous inner class a lambda(í»õ¿
+>
+java:S1604_"(Make this anonymous inner class a lambda(í»õ¿
+>
+java:S1604g"(Make this anonymous inner class a lambda(í»õ¿
+>
+java:S1604s"(Make this anonymous inner class a lambda(í»õ¿
+0
+java:S1220""Move this file to a named package.

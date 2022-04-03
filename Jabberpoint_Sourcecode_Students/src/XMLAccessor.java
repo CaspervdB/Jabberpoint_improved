@@ -24,6 +24,8 @@ import java.util.Vector;
 public class XMLAccessor implements Reader, Writer
 {
 
+    private Item item;
+
     /**
      * Default API to use.
      */
@@ -63,20 +65,20 @@ public class XMLAccessor implements Reader, Writer
             Slide slide = presentation.getSlide(slideNumber);
             out.println("<slide>");
             out.println("<title>" + slide.getTitle() + "</title>");
-            Vector<SlideItem> slideItems = slide.getSlideItems();
-            for (int itemNumber = 0; itemNumber < slideItems.size(); itemNumber++)
+            Vector<Item> items = slide.getSlideItems();
+            for (int itemNumber = 0; itemNumber < items.size(); itemNumber++)
             {
-                SlideItem slideItem = (SlideItem) slideItems.elementAt(itemNumber);
+                Item slideItem = (Item) items.elementAt(itemNumber);
                 out.print("<item kind=");
-                if (slideItem instanceof TextItem)
+                if (item instanceof TextItem)
                 {
-                    out.print("\"text\" level=\"" + slideItem.getLevel() + "\">");
-                    out.print(((TextItem) slideItem).getText());
+                    out.print("\"text\" level=\"" + item.getLevel() + "\">");
+                    out.print(((TextItem) item).getText());
                 } else
                 {
-                    if (slideItem instanceof BitmapItem)
+                    if (item instanceof BitmapItem)
                     {
-                        out.print("\"image\" level=\"" + slideItem.getLevel() + "\">");
+                        out.print("\"image\" level=\"" + item.getLevel() + "\">");
                         out.print(((BitmapItem) slideItem).getName());
                     } else
                     {

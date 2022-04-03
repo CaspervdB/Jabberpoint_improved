@@ -1,0 +1,23 @@
+
+i
+java:S1845("LRename field "ITEM" to prevent any misunderstanding/clash with field "item".(èÑæ8’î¥‰ÿ/
+€
+java:S1149D"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(£û¼óüÿÿÿÿ
+C
+java:S1905G"'Remove this unnecessary cast to "Item".(øğ¨i8éé¼‰ÿ/
+l
+java:S6201I"JReplace this instanceof check and cast with 'instanceof TextItem textitem'(¯›Úıÿÿÿÿ8«îµ‰ÿ/
+S	java:S106U"9Replace this use of System.out or System.err by a logger.(Ô—ßÿûÿÿÿÿ
+]
+java:S1659k"GDeclare "itemNumber" and all following declarations on a separate line.(¹Íê¦
+V
+java:S1117€"8Rename "item" which hides the field declared at line 27.(´è¿8£î¥‰ÿ/
+O	java:S106†"9Replace this use of System.out or System.err by a logger.(¢Çøè
+T	java:S106‰"9Replace this use of System.out or System.err by a logger.(¹ô¤Ôúÿÿÿÿ
+O	java:S106Œ"9Replace this use of System.out or System.err by a logger.(èÇ¨ï
+T	java:S106œ"9Replace this use of System.out or System.err by a logger.(ÅÉÀÆÿÿÿÿÿ
+O	java:S106ª"9Replace this use of System.out or System.err by a logger.(Á‚İó
+0
+java:S1220""Move this file to a named package.
+N
+java:S2755n"3Disable access to external entities in XML parsing.(²™¥úøÿÿÿÿ

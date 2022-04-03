@@ -1,17 +1,14 @@
-import java.awt.Rectangle;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
-import java.awt.font.TextLayout;
-import java.awt.font.TextAttribute;
-import java.awt.font.LineBreakMeasurer;
+import java.awt.*;
 import java.awt.font.FontRenderContext;
+import java.awt.font.LineBreakMeasurer;
+import java.awt.font.TextAttribute;
+import java.awt.font.TextLayout;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.ImageObserver;
 import java.text.AttributedString;
-import java.util.List;
-import java.util.Iterator;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * <p>A text item.</p>
@@ -21,15 +18,18 @@ import java.util.ArrayList;
  * @version 1.6 2014/05/16 Sylvia Stuurman
  */
 
-public class TextItem extends SlideItem
+//TODO: Fix styles
+
+public class TextItem implements Item
 {
     private static final String EMPTY_TEXT = "No Text Given";
     private String text;
+    private int level;
 
     //A textitem of int level with text string
     public TextItem(int level, String string)
     {
-        super(level);
+        level = level;
         text = string;
     }
 
@@ -39,6 +39,10 @@ public class TextItem extends SlideItem
         this(0, EMPTY_TEXT);
     }
 
+    public int getLevel()
+    {
+        return level;
+    }
     //Returns the text
     public String getText()
     {
@@ -54,6 +58,7 @@ public class TextItem extends SlideItem
     }
 
     //Returns the bounding box of an Item
+    @Override
     public Rectangle getBoundingBox(Graphics g, ImageObserver observer,
                                     float scale, Style myStyle)
     {
@@ -78,6 +83,7 @@ public class TextItem extends SlideItem
     }
 
     //Draws the item
+    @Override
     public void draw(int x, int y, float scale, Graphics g,
                      Style myStyle, ImageObserver o)
     {

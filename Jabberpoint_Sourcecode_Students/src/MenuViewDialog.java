@@ -14,6 +14,7 @@ public class MenuViewDialog
 {
 
     public static final String GOTO = "Go to";
+    public static final String VIEW = "View";
     public static final String NEXT = "Next";
     public static final String OPEN = "Open";
     public static final String PAGENR = "Page number?";

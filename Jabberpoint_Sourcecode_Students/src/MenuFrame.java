@@ -82,7 +82,7 @@ public class MenuFrame extends MenuBar
             }
         });
         add(fileMenu);
-        Menu viewMenu = new Menu("VIEW");
+        Menu viewMenu = new Menu(MenuViewDialog.VIEW);
         viewMenu.add(menuItem = mkMenuItem(MenuViewDialog.NEXT));
         menuItem.addActionListener(new ActionListener()
         {
